@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -7,7 +8,13 @@ const About = () => {
         <h2 className="text-3xl font-bold text-center text-white mb-10">Professional Skills</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto">
           {/* Card 1 */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300 animate-fade-in">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300"
+          >
             <h3 className="text-xl font-semibold text-blue-400 mb-2">React.js</h3>
             <p className="text-gray-300 mb-2">Building dynamic user interfaces with reusable components and hooks.</p>
             <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
@@ -15,32 +22,62 @@ const About = () => {
               <li>Job Fair Management – Created a Job Fair Management using MERN.</li>
               <li>Event Management – Created an Event Management using MERN</li>
             </ul>
-          </div>
+          </motion.div>
           {/* Card 2 */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300 animate-fade-in delay-100">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300"
+          >
             <h3 className="text-xl font-semibold text-green-400 mb-2">Node.js & Express</h3>
             <p className="text-gray-300">Creating fast and scalable backend APIs with RESTful architecture.</p>
-          </div>
+          </motion.div>
           {/* Card 3 */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300 animate-fade-in delay-200">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300"
+          >
             <h3 className="text-xl font-semibold text-yellow-400 mb-2">MySQL</h3>
             <p className="text-gray-300">Designing and managing relational databases for web applications.</p>
-          </div>
+          </motion.div>
           {/* Card 4 */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300 animate-fade-in delay-300">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300"
+          >
             <h3 className="text-xl font-semibold text-pink-400 mb-2">Tailwind CSS</h3>
             <p className="text-gray-300">Crafting beautiful, responsive designs using utility-first classes.</p>
-          </div>
+          </motion.div>
           {/* Card 5 */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300 animate-fade-in delay-400">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300"
+          >
             <h3 className="text-xl font-semibold text-purple-400 mb-2">Git & GitHub</h3>
             <p className="text-gray-300">Version control and team collaboration with Git best practices.</p>
-          </div>
+          </motion.div>
           {/* Card 6 */}
-          <div className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300 animate-fade-in delay-500">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-gray-900 p-6 rounded-2xl shadow-md transform hover:scale-105 transition duration-300"
+          >
             <h3 className="text-xl font-semibold text-red-400 mb-2">Problem Solving</h3>
             <p className="text-gray-300">Strong ability to debug, optimize code, and solve real-world problems.</p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

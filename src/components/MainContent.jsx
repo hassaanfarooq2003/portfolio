@@ -1,8 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const MainContent = () => {
   return (
-    <main className="min-h-screen w-full flex items-center pt-20 bg-black ml-12 sm:ml-16">
+    <motion.main
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="min-h-screen w-full flex items-center pt-20 bg-black ml-12 sm:ml-16"
+    >
       <div className="flex-1 flex flex-col justify-center px-2 sm:px-0">
         <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2 sm:mb-4">
           Hey, I'm Hassaan
@@ -18,7 +25,6 @@ const MainContent = () => {
           Contact Me
         </button>
       </div>
-
       {/* Dot grid decorative element */}
       <div className="hidden md:block ml-16">
         <div className="grid grid-cols-12 gap-3">
@@ -27,7 +33,7 @@ const MainContent = () => {
           ))}
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 
