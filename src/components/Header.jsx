@@ -32,7 +32,7 @@ const Header = () => {
       className={`fixed left-16 top-0 right-0 h-20 flex items-center justify-between px-2 sm:px-8 bg-transparent z-10 transition-transform duration-300 ${showHeader ? 'translate-y-0' : '-translate-y-full'} gap-x-2 sm:gap-x-4`}
     >
       <a
-        href="/resume/Hassaan_Farooq.pdf"
+        href="https://qs8phdqfl1jtoklx.public.blob.vercel-storage.com/Hassaan_Farooq.pdf"
         download="Hassaan_Farooq_Resume.pdf"
         className="border border-green-400 text-green-400 px-2 py-1 sm:px-4 sm:py-1 rounded-lg text-sm sm:text-base font-medium hover:bg-green-400 hover:text-black transition-colors"
       >
