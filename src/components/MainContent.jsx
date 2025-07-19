@@ -21,9 +21,12 @@ const MainContent = () => {
         <p className="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8">
           I'm a recent graduate from <span className="text-white font-semibold">FAST NUCES</span>, eager to contribute to impactful tech solutions. I specialize in building full-stack web applications using the MERN stack, and I’m continuously exploring the world of DevOps and Cloud technologies.
         </p>
-        <button className="bg-green-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-green-500 transition-colors">
+        <a
+          href="mailto:hassaanfarooq000@gmail.com"
+          className="bg-green-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-green-500 transition-colors inline-block"
+        >
           Contact Me
-        </button>
+        </a>
       </div>
       {/* Dot grid decorative element */}
       <div className="hidden md:block ml-16">
