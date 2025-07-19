@@ -7,7 +7,7 @@ const Contact = () => {
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="flex items-center justify-between w-full max-w-2xl mx-auto mt-12"
+      className="flex items-center justify-between w-full max-w-2xl mx-auto mt-12 ml-12 sm:ml-16"
     >
       <h2 className="text-2xl font-bold text-white">Let's Connect</h2>
       <a

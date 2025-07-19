@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   return (
     <div className="h-screen w-12 sm:w-16 bg-black flex flex-col items-center py-2 sm:py-4 fixed left-0 top-5 z-20">
-      <div className="flex flex-col items-center space-y-4 sm:space-y-8">
+      <div className="flex flex-col items-center space-y-6 sm:space-y-8">
         {sections.map((section) => (
           <a
             key={section.id}
