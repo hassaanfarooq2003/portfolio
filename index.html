@@ -1,12 +1,82 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark-cluster">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hassaan Farooq</title>
+    <title>Hassaan Farooq | MERN, DevOps and Cloud Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Hassaan Farooq, a MERN stack developer with a focus on DevOps, CI/CD, containers and cloud. Explore it as a desktop, a terminal, or a plain scrolling page."
+    />
+    <meta name="theme-color" content="#0a0d0b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hassaan Farooq | MERN, DevOps and Cloud Developer" />
+    <meta
+      property="og:description"
+      content="A portfolio that boots like a CI pipeline. Kill a pod, open a terminal, switch kubectl contexts."
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var themes = ['dark-cluster', 'blueprint', 'light-vellum', 'retro-crt'];
+        var theme = 'dark-cluster';
+        try {
+          var saved = localStorage.getItem('portfolio:theme');
+          if (themes.indexOf(saved) !== -1) {
+            theme = saved;
+          } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            theme = 'light-vellum';
+          }
+        } catch (e) {}
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hassaan Farooq",
+        "jobTitle": "MERN Stack Developer",
+        "alumniOf": "FAST National University",
+        "knowsAbout": ["MERN stack", "DevOps", "Docker", "Kubernetes", "CI/CD", "Cloud computing", "MLOps"],
+        "sameAs": [
+          "https://github.com/hassaanfarooq2003",
+          "https://www.linkedin.com/in/hassaan-farooq-844541148/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.6">
+        <h1>Hassaan Farooq</h1>
+        <p>
+          MERN stack developer with interests in DevOps and Cloud Computing. Recent graduate of FAST NUCES.
+          This site is interactive and needs JavaScript. The short version:
+        </p>
+        <ul>
+          <li>Full-stack projects with MongoDB, Express, React and Node.js</li>
+          <li>CI/CD, Docker and Kubernetes, plus an end-to-end MLOps pipeline</li>
+          <li>
+            Experience: Software Engineer at Nayatel (Shining Star award as a Junior Software Engineer), previously IT
+            intern at British American Tobacco, UX/UI intern, teaching assistant and lab demonstrator at FAST
+          </li>
+        </ul>
+        <p>
+          <a href="https://github.com/hassaanfarooq2003?tab=repositories">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/hassaan-farooq-844541148/">LinkedIn</a> ·
+          <a href="https://qs8phdqfl1jtoklx.public.blob.vercel-storage.com/Hassaan_Farooq.pdf">Resume (PDF)</a>
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
